@@ -46,11 +46,11 @@ The example showing various ways to define custom XAML namespace is located unde
 
 You can see that the solution consists of 3 projects: the main project NP.Demos.XamlNamespacesSample and two projects on which the main project depends: Dependency1Proj and Dependency2Proj:
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/sample1.png)
 
 Compile and run the solution - here is what you are going to see:
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/sample2.png)
 
 There are 5 square buttons of different colors stacked vertically within a window. 
 
