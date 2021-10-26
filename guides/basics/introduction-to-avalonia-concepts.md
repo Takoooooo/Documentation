@@ -302,11 +302,11 @@ The sample is located under [NP.Demos.StaticVsDynamicXamlResourcesSample](https:
 
 Open the solution and run it, here is what you will see:
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/sample3.png)
 
 Pressing "Change Status Color" button will result in the third rectangle switching its color to red:
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/sample4.png)
 
 Here is the MainWindow.xaml file for the sample:
 
@@ -457,7 +457,7 @@ In this sample we show how to refer to XAML resources located in a different fil
 
 The sample is located under [NP.Demos.XamlResourcesInMultipleProjects](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.AccessPropertiesInXamlSample) Visual Studio solution. After running the sample you will see 3 rectangles of different colors - red, green and blue:
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/sample5.png)
 
 The solution consists of two projects - the main project NP.Demos.XamlResourcesInMultipleProjects and another project which the main project depends on - Dependency1Proj:
 
