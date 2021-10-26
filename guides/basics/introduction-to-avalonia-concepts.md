@@ -461,7 +461,7 @@ The sample is located under [NP.Demos.XamlResourcesInMultipleProjects](https://g
 
 The solution consists of two projects - the main project NP.Demos.XamlResourcesInMultipleProjects and another project which the main project depends on - Dependency1Proj:
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/sample6.png)
 
 RedBrush resource is defined within Themes/BrushResources.axaml file under Dependency1Proj:
 
@@ -476,11 +476,11 @@ RedBrush resource is defined within Themes/BrushResources.axaml file under Depen
 
 Note that the BrushResources.axaml file has "Avalonia XAML" build action \(as any Avalonia XAML resource file should\):
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](../../.gitbook/assets/sample7.png)
 
 Such files are created by choosing "Resource Dictionary \(Avalonia\)" template for Visual Studio new item creation:
 
-![](../../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/sample8.png)
 
 GreenBrush Avalonia Resource is defined within Themes/LocalBrushResources.axaml file \(this file is located in the main project\):
 
@@ -566,7 +566,7 @@ At the end of the resource section, we define the BlueBrush resource - local to 
 
 `x:Static` markup extension allows to refer to static properties defined in the same project or in some dependent projects. The sample code is located under [NP.Demos.XStaticMarkupExtensionSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.XStaticMarkupExtensionSample) solution. It contains two projects - the NP.Demos.XStaticMarkupExtensionSample \(main project\) and the dependency project Dependency1Proj. Main project contains class `LocalProjectStaticBrushes` while the dependency project contains `DependencyProjectStaticBrushes`
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/sample9.png)
 
 The contents of both C\# files are very simple - each defines and sets value for a single static property. Here is the content of `LocalProjectStaticBrushes` class:
 
@@ -590,7 +590,7 @@ public class DependencyProjectStaticBrushes
 
 Running the project will create a window with two rectangle red and green:
 
-![](../../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/sample10.png)
 
 Here are the relevant parts of MainWindow.axaml file:
 
@@ -641,13 +641,13 @@ In Avalonia Lingo - Assets are usually binary image \(e.g. png or jpg\) files. I
 
 The sample's code is located under [NP.Demos.ReferringToAssetsInXaml](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.ReferringToAssetsInXaml) solution. Here is the solution's code:
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/sample11.png)
 
 We have Themes/avalonia-32.png file under the dependent project Dependency1Proj and Themes/LinuxIcon.jpg file under the main project.
 
 Note that the Build Action for the asset files should be "AvaloniaResource" \(unlike for XAML resource files where as we saw it was set to "Avalonia XAML"\):
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/sample12.png)
 
 Build and run the sample, here is what you'll see:
 
