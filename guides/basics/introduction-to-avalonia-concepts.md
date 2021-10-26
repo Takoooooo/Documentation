@@ -461,7 +461,7 @@ The sample is located under [NP.Demos.XamlResourcesInMultipleProjects](https://g
 
 The solution consists of two projects - the main project NP.Demos.XamlResourcesInMultipleProjects and another project which the main project depends on - Dependency1Proj:
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png)
 
 RedBrush resource is defined within Themes/BrushResources.axaml file under Dependency1Proj:
 
@@ -476,11 +476,11 @@ RedBrush resource is defined within Themes/BrushResources.axaml file under Depen
 
 Note that the BrushResources.axaml file has "Avalonia XAML" build action \(as any Avalonia XAML resource file should\):
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 Such files are created by choosing "Resource Dictionary \(Avalonia\)" template for Visual Studio new item creation:
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2836%29.png)
 
 GreenBrush Avalonia Resource is defined within Themes/LocalBrushResources.axaml file \(this file is located in the main project\):
 
@@ -566,7 +566,7 @@ At the end of the resource section, we define the BlueBrush resource - local to 
 
 `x:Static` markup extension allows to refer to static properties defined in the same project or in some dependent projects. The sample code is located under [NP.Demos.XStaticMarkupExtensionSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.XStaticMarkupExtensionSample) solution. It contains two projects - the NP.Demos.XStaticMarkupExtensionSample \(main project\) and the dependency project Dependency1Proj. Main project contains class `LocalProjectStaticBrushes` while the dependency project contains `DependencyProjectStaticBrushes`
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2838%29.png)
 
 The contents of both C\# files are very simple - each defines and sets value for a single static property. Here is the content of `LocalProjectStaticBrushes` class:
 
@@ -590,7 +590,7 @@ public class DependencyProjectStaticBrushes
 
 Running the project will create a window with two rectangle red and green:
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 Here are the relevant parts of MainWindow.axaml file:
 
@@ -641,17 +641,17 @@ In Avalonia Lingo - Assets are usually binary image \(e.g. png or jpg\) files. I
 
 The sample's code is located under [NP.Demos.ReferringToAssetsInXaml](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.ReferringToAssetsInXaml) solution. Here is the solution's code:
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 We have Themes/avalonia-32.png file under the dependent project Dependency1Proj and Themes/LinuxIcon.jpg file under the main project.
 
 Note that the Build Action for the asset files should be "AvaloniaResource" \(unlike for XAML resource files where as we saw it was set to "Avalonia XAML"\):
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 Build and run the sample, here is what you'll see:
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image%20%2837%29.png)
 
 There are 4 vertically stacked images - here is the corresponding code:
 
@@ -729,7 +729,7 @@ Note that even for the local file "LinuxIcon.jpg" \(file defined in the same pro
 
 The last sample will demonstrate that potentially one can use XAML even for a completely non-visual code. The sample is located under [NP.Demos.NonVisualXamlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.NonVisualXamlSample) solution. Unlike the previous samples - it is a console application referencing only one \(not three\) Avalonia nuget packages:
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 The main program is located under Program.cs file and is very simple:
 
@@ -742,7 +742,7 @@ public static void Main(string[] args)
 
 You can put a breakpoint after the line and investigate the content of the course object:
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2830%29.png)
 
 Take a look at Course.axaml/Course.axaml.cs files. Here is the content of Course.axaml file:
 
@@ -2106,11 +2106,11 @@ There are 3 different modes of propagation for the routed events:
 
 The following pictures depict bubbling and tunneling event propagation:
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2855%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 The Avalonia routed events are more powerful and logical than their WPF counterparts because in WPF the event has to choose only one of the routing strategies - it can either be direct or bubbling or tunneling. In order to allow some preprocessing before handing the main \(usually bubbling\) events many bubbling events have their tunneling peers firing before them - the so called Preview events. The preview events are completely different events in WPF and there is no logical connection \(aside from their names\) between them and the corresponding bubbling events. 
 
@@ -2149,7 +2149,7 @@ We have a `Window` \(with Red background\) containing a `Grid` with Green backgr
 
 Run the project in the Visual Studio debugger - here is what you shall see:
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2847%29.png)
 
 Click on the blue square in the middle and take a look a the "Output" pane of the Visual Studio. Here is what you see there:
 
@@ -2318,15 +2318,15 @@ The last line show that the bubbling pass of the event was raised on the window,
 
 Now start the Avalonia Development Tool by mouse-clicking on the window of the sample and pressing **F12**. Click on the "Events" tab and out of all events displayed on the left pane, choose PointerPressed to be checked and undo the check on the rest of them:
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 After that press on the blue border within the application, an entry for the event will show the main window:
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 Now mouse-click on the event entry in the main window - the Event Chain pane will show how the event was propagating on the visual tree:
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../../.gitbook/assets/image%20%2843%29.png)
 
 Unfortunately currently, the Event Chain of the tool shows only the propagation of the unhandled event.  It stops showing at the last point when the event was unhandled - in our case the first item of the bubble pass. You can see that there are more instances of the tunneling of our event shown in the tool than in our previous printing. This is because the tool shows all elements within the Visual tree that the event is being raised on, while we only connected the handler to the Window, the Grid and the Border.
 
@@ -2503,7 +2503,7 @@ Avalonia, therefore provides a considerably cleaner way of calling a method on a
 
 Run this sample located under [NP.Demos.CommandSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.CommandSample) solution. Here is what you'll see:
 
-![](../.gitbook/assets/image%20%2854%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 There is Status field value shown in the middle of the window. When you press "Toggle Status" button it will toggle between `True` and `False`. Clicking "Set Status to True" will set the status value to 'True' and unchecking "Can Toggle Status" checkbox will disable "Toggle Status" button.
 
@@ -2700,19 +2700,19 @@ The sample's code is located under [NP.Demos.UserControlSample](https://github.c
 
 It contains `MyUserControl` user control:
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 To create such UserControl from scratch - use Add-&gt;New Item context menu and then, in the opened dialog, choose Avalonia on the left and "User Control \(Avalonia\)" on the right and then press Add button. 
 
-![Creating User Control](../.gitbook/assets/image%20%2851%29.png)
+![Creating User Control](../../.gitbook/assets/image%20%2851%29.png)
 
 Run the sample, here is the window that pops up:
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../../.gitbook/assets/image%20%2850%29.png)
 
 Start typing within the `TextBox`. Buttons "Cancel" and "Save" will become enabled. If you press Cancel, the text will revert to the saved value \(in the beginning it is empty\). If you press Save, the new saved value will become whatever currently is in the `TextBox`. The buttons "Cancel" and "Save" are disabled when the Entered text is the same as the Saved Text and are enabled otherwise:
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 MainWindow.axaml file has only one non-trivial element: `MyUserControl`:
 
@@ -2885,7 +2885,7 @@ Also, the visual representation from the C\# logic can be separated using View-V
 
 You can find this sample under [NP.Demos.CustomControlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.CustomControlSample) solution. The sample behaves in exactly the same way as the previous sample, but is built very differently. All non-default C\# functionality is located under MyCustomControl.cs file:
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 Here is its code:
 
@@ -3131,7 +3131,7 @@ And the buttons' commands are bound to the corresponding public methods: `Cancel
 
 [NP.Demos.DifferentVisualsForCustomControlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.DifferentVisualsForCustomControlSample) shows exactly the same custom control displayed in two different ways:
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 The representation at the top is the same as in the previous sample - while in the bottom I changed the row orders, so that the buttons are at the top, saved text in the middle and TextBox is at the bottom. That would not be possible with the User Control.
 
@@ -3180,13 +3180,13 @@ Dealing with Avalonia Tutorial we are not interested in communications between t
 
 `ContentPresenter` with the help of a `DataTemplate` converts a non-visual object into a visual object \(a view\).
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2859%29.png)
 
 `Content` property of `ContentPresenter` is usually set to a non-visual object, while `ContentTemplate` should be set to a `DataTemplate`. `ContentPresenter` combines them into a visual object \(View\) where the DataContext is given by the `ContentPresenter's` `Content` property while the Visual tree is provided by the `DataTemplate`.
 
 `ItemsPresenter` with the help of a `DataTemplate` converts a collection of non-visual objects into a collection of visual objects, each containing a `ContentPresenter` that converts the individual View Model item within the collection into a Visual object. The Visual objects are arranged according to the panel provided by `ItemsPresenter.ItemsPanel` property value. 
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 `Items` property of `ItemsPresenter` usually contains a collection of non-visual objects. `ItemTemplate` has `DataTemplate` object in it and `ItemsPresenter` combines them into a collection of Visual objects. 
 
@@ -3194,7 +3194,7 @@ Dealing with Avalonia Tutorial we are not interested in communications between t
 
 Code for this sample is located in [NP.Demos.ContentPresenterSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.ContentPresenterSample) solution. The demo application behaves in exactly the same fashion as the samples in [Avalonia User Controls](https://app.gitbook.com/@avalonia-ui/s/avalonia-docs-2/building-avalonia-applications/introduction-to-avalonia-wpf-concepts#avalonia-user-controls) and [Avalonia ControlTemplates and CustomControls](https://app.gitbook.com/@avalonia-ui/s/avalonia-docs-2/building-avalonia-applications/introduction-to-avalonia-wpf-concepts#avalonia-controltemplates-and-customcontrols) chapters.
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
   
 Start typing within the `TextBox`. Buttons "Cancel" and "Save" will become enabled. If you press Cancel, the text will revert to the saved value \(in the beginning it is empty\). If you press Save, the new saved value will become whatever currently is in the `TextBox`. The buttons "Cancel" and "Save" are disabled when the Entered text is the same as the Saved Text and are enabled otherwise.
@@ -3419,21 +3419,21 @@ This sample describes how to use `ItemsPresenter` to display a collection of non
 
 Run the sample, here is what you'll see:
 
-![](../.gitbook/assets/image%20%2867%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 Try making the window more narrow the name will wrap down eg:
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../../.gitbook/assets/image%20%2866%29.png)
 
 This is because we are using a `WrapPanel` to display multiple items each item containing first and last names of a person.
 
 Press "Remove Last" button and the last person item will be removed and the "Number of People" text will be updated:
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 Keep pressing the button, until there are no items left - the button "Remove Last" will become disabled:
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2864%29.png)
 
 Take a look a the code for the sample. There are two View Model files added: PersonViewModel.cs and TestViewModel.cs. 
 
