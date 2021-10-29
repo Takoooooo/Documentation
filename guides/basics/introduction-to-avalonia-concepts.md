@@ -651,7 +651,7 @@ Note that the Build Action for the asset files should be "AvaloniaResource" \(un
 
 Build and run the sample, here is what you'll see:
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/sample13.png)
 
 There are 4 vertically stacked images - here is the corresponding code:
 
@@ -729,7 +729,7 @@ Note that even for the local file "LinuxIcon.jpg" \(file defined in the same pro
 
 The last sample will demonstrate that potentially one can use XAML even for a completely non-visual code. The sample is located under [NP.Demos.NonVisualXamlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.XamlSamples/NP.Demos.NonVisualXamlSample) solution. Unlike the previous samples - it is a console application referencing only one \(not three\) Avalonia nuget packages:
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/sample14.png)
 
 The main program is located under Program.cs file and is very simple:
 
@@ -742,7 +742,7 @@ public static void Main(string[] args)
 
 You can put a breakpoint after the line and investigate the content of the course object:
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/sample15.png)
 
 Take a look at Course.axaml/Course.axaml.cs files. Here is the content of Course.axaml file:
 
@@ -2106,11 +2106,11 @@ There are 3 different modes of propagation for the routed events:
 
 The following pictures depict bubbling and tunneling event propagation:
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/sample16.png)
 
 
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/sample17.png)
 
 The Avalonia routed events are more powerful and logical than their WPF counterparts because in WPF the event has to choose only one of the routing strategies - it can either be direct or bubbling or tunneling. In order to allow some preprocessing before handing the main \(usually bubbling\) events many bubbling events have their tunneling peers firing before them - the so called Preview events. The preview events are completely different events in WPF and there is no logical connection \(aside from their names\) between them and the corresponding bubbling events. 
 
@@ -2149,7 +2149,7 @@ We have a `Window` \(with Red background\) containing a `Grid` with Green backgr
 
 Run the project in the Visual Studio debugger - here is what you shall see:
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/sample18)
 
 Click on the blue square in the middle and take a look a the "Output" pane of the Visual Studio. Here is what you see there:
 
