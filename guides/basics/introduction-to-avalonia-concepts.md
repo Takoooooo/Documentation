@@ -2149,7 +2149,7 @@ We have a `Window` \(with Red background\) containing a `Grid` with Green backgr
 
 Run the project in the Visual Studio debugger - here is what you shall see:
 
-![](../../.gitbook/assets/sample18)
+![](../../.gitbook/assets/sample18.png)
 
 Click on the blue square in the middle and take a look a the "Output" pane of the Visual Studio. Here is what you see there:
 
