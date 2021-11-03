@@ -2503,7 +2503,7 @@ Avalonia, therefore provides a considerably cleaner way of calling a method on a
 
 Run this sample located under [NP.Demos.CommandSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.CommandSample) solution. Here is what you'll see:
 
-![](../../.gitbook/assets/image%20%2854%29.png)
+![](../../.gitbook/assets/sample22.png)
 
 There is Status field value shown in the middle of the window. When you press "Toggle Status" button it will toggle between `True` and `False`. Clicking "Set Status to True" will set the status value to 'True' and unchecking "Can Toggle Status" checkbox will disable "Toggle Status" button.
 
@@ -2700,19 +2700,19 @@ The sample's code is located under [NP.Demos.UserControlSample](https://github.c
 
 It contains `MyUserControl` user control:
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/sample23.png)
 
 To create such UserControl from scratch - use Add-&gt;New Item context menu and then, in the opened dialog, choose Avalonia on the left and "User Control \(Avalonia\)" on the right and then press Add button. 
 
-![Creating User Control](../../.gitbook/assets/image%20%2851%29.png)
+![Creating User Control](../../.gitbook/assets/sample24.png)
 
 Run the sample, here is the window that pops up:
 
-![](../../.gitbook/assets/image%20%2850%29.png)
+![](../../.gitbook/assets/sample25.png)
 
 Start typing within the `TextBox`. Buttons "Cancel" and "Save" will become enabled. If you press Cancel, the text will revert to the saved value \(in the beginning it is empty\). If you press Save, the new saved value will become whatever currently is in the `TextBox`. The buttons "Cancel" and "Save" are disabled when the Entered text is the same as the Saved Text and are enabled otherwise:
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/sample26.png)
 
 MainWindow.axaml file has only one non-trivial element: `MyUserControl`:
 
@@ -2885,7 +2885,7 @@ Also, the visual representation from the C\# logic can be separated using View-V
 
 You can find this sample under [NP.Demos.CustomControlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.CustomControlSample) solution. The sample behaves in exactly the same way as the previous sample, but is built very differently. All non-default C\# functionality is located under MyCustomControl.cs file:
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/sample27.png)
 
 Here is its code:
 
@@ -3131,7 +3131,7 @@ And the buttons' commands are bound to the corresponding public methods: `Cancel
 
 [NP.Demos.DifferentVisualsForCustomControlSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.DifferentVisualsForCustomControlSample) shows exactly the same custom control displayed in two different ways:
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/sample28.png)
 
 The representation at the top is the same as in the previous sample - while in the bottom I changed the row orders, so that the buttons are at the top, saved text in the middle and TextBox is at the bottom. That would not be possible with the User Control.
 
@@ -3180,13 +3180,13 @@ Dealing with Avalonia Tutorial we are not interested in communications between t
 
 `ContentPresenter` with the help of a `DataTemplate` converts a non-visual object into a visual object \(a view\).
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/sample29.png)
 
 `Content` property of `ContentPresenter` is usually set to a non-visual object, while `ContentTemplate` should be set to a `DataTemplate`. `ContentPresenter` combines them into a visual object \(View\) where the DataContext is given by the `ContentPresenter's` `Content` property while the Visual tree is provided by the `DataTemplate`.
 
 `ItemsPresenter` with the help of a `DataTemplate` converts a collection of non-visual objects into a collection of visual objects, each containing a `ContentPresenter` that converts the individual View Model item within the collection into a Visual object. The Visual objects are arranged according to the panel provided by `ItemsPresenter.ItemsPanel` property value. 
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/sample30.png)
 
 `Items` property of `ItemsPresenter` usually contains a collection of non-visual objects. `ItemTemplate` has `DataTemplate` object in it and `ItemsPresenter` combines them into a collection of Visual objects. 
 
@@ -3194,7 +3194,7 @@ Dealing with Avalonia Tutorial we are not interested in communications between t
 
 Code for this sample is located in [NP.Demos.ContentPresenterSample](https://github.com/npolyak/NP.Avalonia.Demos/tree/main/NP.Demos.AvaloniaBasicConcepts/NP.Demos.ContentPresenterSample) solution. The demo application behaves in exactly the same fashion as the samples in [Avalonia User Controls](https://app.gitbook.com/@avalonia-ui/s/avalonia-docs-2/building-avalonia-applications/introduction-to-avalonia-wpf-concepts#avalonia-user-controls) and [Avalonia ControlTemplates and CustomControls](https://app.gitbook.com/@avalonia-ui/s/avalonia-docs-2/building-avalonia-applications/introduction-to-avalonia-wpf-concepts#avalonia-controltemplates-and-customcontrols) chapters.
 
-![](../../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/sample31.png)
 
   
 Start typing within the `TextBox`. Buttons "Cancel" and "Save" will become enabled. If you press Cancel, the text will revert to the saved value \(in the beginning it is empty\). If you press Save, the new saved value will become whatever currently is in the `TextBox`. The buttons "Cancel" and "Save" are disabled when the Entered text is the same as the Saved Text and are enabled otherwise.
@@ -3419,21 +3419,21 @@ This sample describes how to use `ItemsPresenter` to display a collection of non
 
 Run the sample, here is what you'll see:
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](../../.gitbook/assets/sample32.png)
 
 Try making the window more narrow the name will wrap down eg:
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](../../.gitbook/assets/sample33.png)
 
 This is because we are using a `WrapPanel` to display multiple items each item containing first and last names of a person.
 
 Press "Remove Last" button and the last person item will be removed and the "Number of People" text will be updated:
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/sample34.png)
 
 Keep pressing the button, until there are no items left - the button "Remove Last" will become disabled:
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/sample35.png)
 
 Take a look a the code for the sample. There are two View Model files added: PersonViewModel.cs and TestViewModel.cs. 
 
