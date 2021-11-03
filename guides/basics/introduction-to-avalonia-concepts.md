@@ -2318,15 +2318,15 @@ The last line show that the bubbling pass of the event was raised on the window,
 
 Now start the Avalonia Development Tool by mouse-clicking on the window of the sample and pressing **F12**. Click on the "Events" tab and out of all events displayed on the left pane, choose PointerPressed to be checked and undo the check on the rest of them:
 
-![](../../.gitbook/assets/image%20%2848%29.png)
+![](../../.gitbook/assets/sample19.png)
 
 After that press on the blue border within the application, an entry for the event will show the main window:
 
-![](../../.gitbook/assets/image%20%2846%29.png)
+![](../../.gitbook/assets/sample20.png)
 
 Now mouse-click on the event entry in the main window - the Event Chain pane will show how the event was propagating on the visual tree:
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](../../.gitbook/assets/sample21.png)
 
 Unfortunately currently, the Event Chain of the tool shows only the propagation of the unhandled event.  It stops showing at the last point when the event was unhandled - in our case the first item of the bubble pass. You can see that there are more instances of the tunneling of our event shown in the tool than in our previous printing. This is because the tool shows all elements within the Visual tree that the event is being raised on, while we only connected the handler to the Window, the Grid and the Border.
 
